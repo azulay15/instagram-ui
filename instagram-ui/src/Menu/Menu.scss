@@ -1,0 +1,14 @@
+.Menu {
+    color: #333333;
+}
+
+.home {
+    color: #333333;
+}
+
+
+@media (max-device-width:500px) {
+    #home-text{
+        display:none
+    }
+}

@@ -1,0 +1,15 @@
+@import '~bootstrap';
+
+.App {
+
+    display: flex;
+    flex-direction: column-reverse;
+
+    @media screen and (max-width: 768px)  {
+        flex-direction: column;
+        #Menu{
+            align-self: end;
+        }
+
+    }
+}

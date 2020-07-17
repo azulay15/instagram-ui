@@ -1,20 +1,16 @@
 import React, { useContext } from 'react';
-import { UserContext } from '../../user.context';
 import './MenuAvatar.scss';
-import './morazulay.jpg'
+import { UserContext } from '../../user-context';
+import Avatar from '../../Avatar/Avatar';
 
+function MenuAvatar() {
+	const { user } = useContext(UserContext);
 
-
-function  MenuAvatar() {
-
-const { user } = useContext(UserContext);
-
-  return (
-        <div className="MenuAvatar">
-            {user && <img src="./morazulay.jpg" />}
-        </div>
-  );
+	return (
+		<div className="MenuAvatar">
+			<Avatar size="sm" image={user.avatar} />
+		</div>
+	);
 }
-
 
 export default MenuAvatar;
